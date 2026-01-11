@@ -1,15 +1,15 @@
 body {
       color: #0f0;
       padding: none;
-      background: white;
+      background: black;
       font-family: Consolas, "Courier New", monospace;
 }
 
 #calculator {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      border: solid;
+      justify-content: center;
+      border: solid goldenrod;
 }
 
 #calculator_display { 
@@ -19,19 +19,35 @@ body {
 }
 
 #buttons_layout {
+      margin: 8px 0;
       display: grid;
-      grid-template-columns: 150px 150px 150px 150px 150px 150px;
-      grid-template-rows: 100px 100px 100px;
-      gap: 5px;
-      grid-template-areas:
-      "button-1 button-2 button-3 button-4 button-5 button-6"
-      "button-7 button-8 button-9 button-10 button-11 button-12"
-      "button-13 button-14 button-15 button-16 button-17 button-12";
-      border: solid red;
+      grid-template-columns: repeat(6, 150px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 8px;
+      justify-content: center;
+      border: solid goldenrod;
+}
+
+@media (max-width: 980px) {
+      #buttons_layout {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-auto-rows: 100px;
+      }
+}
+
+.div_button {
+      display: flex;
+      justify-content: center;
 }
 
 .calc_button {
+      width: 100%;
+      height: 100%;
       font-size: 20px;
       border-radius: 20px;
       border: none;
+}
+
+.big_button {
+      grid-row: span 2;
 }
