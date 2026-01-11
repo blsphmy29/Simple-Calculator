@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMD Simple Calculator</title>
+  <title>Simple Calculator (CMD Style)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calculator">
-      <input id="calculator_display" readonly>
+  <div id="calculator">
+    <input id="calculator_display" readonly>
+  </div>
+  <div id="buttons_layout">
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">Delete</button>
     </div>
-    <div id="buttons_layout">
-      <button class="calc_button" style="grid-area: button-1" onclick="PutInDisplay('1')">Delete</button>
-      <button class="calc_button" style="grid-area: button-2" onclick="PutInDisplay('1')">7</button>
-      <button class="calc_button" style="grid-area: button-3" onclick="PutInDisplay('1')">8</button>
-      <button class="calc_button" style="grid-area: button-4" onclick="PutInDisplay('1')">9</button>
-      <button class="calc_button" style="grid-area: button-5" onclick="PutInDisplay('1')">*</button>
-      <button class="calc_button" style="grid-area: button-6" onclick="PutInDisplay('1')">/</button>
-      <button class="calc_button" style="grid-area: button-7" onclick="PutInDisplay('1')">0</button>
-      <button class="calc_button" style="grid-area: button-8" onclick="PutInDisplay('1')">4</button>
-      <button class="calc_button" style="grid-area: button-9" onclick="PutInDisplay('1')">5</button>
-      <button class="calc_button" style="grid-area: button-10" onclick="PutInDisplay('1')">6</button>
-      <button class="calc_button" style="grid-area: button-11" onclick="PutInDisplay('1')">-</button>
-      <button class="calc_button" style="grid-area: button-12" onclick="PutInDisplay('1')">=</button>
-      <button class="calc_button" style="grid-area: button-13" onclick="PutInDisplay('1')">Clear</button>
-      <button class="calc_button" style="grid-area: button-14" onclick="PutInDisplay('1')">1</button>
-      <button class="calc_button" style="grid-area: button-15" onclick="PutInDisplay('1')">2</button>
-      <button class="calc_button" style="grid-area: button-16" onclick="PutInDisplay('1')">3</button>
-      <button class="calc_button" style="grid-area: button-17" onclick="PutInDisplay('1')">+</button>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">7</button>
     </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">8</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">9</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">*</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">/</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">0</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">4</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">5</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">6</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">-</button>
+    </div>
+    <div class="div_button big_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">=</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">Clear</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">1</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">2</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">3</button>
+    </div>
+    <div class="div_button">
+      <button class="calc_button" onclick="PutInDisplay('1')">+</button>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
