@@ -1,1 +1,37 @@
+body {
+      color: #0f0;
+      padding: none;
+      background: white;
+      font-family: Consolas, "Courier New", monospace;
+}
 
+#calculator {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      border: solid;
+}
+
+#calculator_display { 
+      width: 1080px;
+      height: 565px;
+      background: #0C0C0C;    
+}
+
+#buttons_layout {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px 150px;
+      grid-template-rows: 100px 100px 100px;
+      gap: 5px;
+      grid-template-areas:
+      "button-1 button-2 button-3 button-4 button-5 button-6"
+      "button-7 button-8 button-9 button-10 button-11 button-12"
+      "button-13 button-14 button-15 button-16 button-17 button-12";
+      border: solid red;
+}
+
+.calc_button {
+      font-size: 20px;
+      border-radius: 20px;
+      border: none;
+}
