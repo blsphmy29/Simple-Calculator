@@ -55,7 +55,14 @@ function refreshLine() {
 
 // Execute command / calculation
 function executeCommand() {
-  print(""); // new line
+  // If no input, just create a new prompt line (like real CMD)
+  if (currentInput.trim() === "") {
+    print(PROMPT);
+    return;
+  }
+
+  // Move to new line before output
+  print("");
 
   if (currentInput.toLowerCase() === "cls") {
     display.value = PROMPT;
@@ -70,7 +77,7 @@ function executeCommand() {
     print(`'${currentInput}' is not recognized as an internal or external command.`);
   }
 
-  print("");
+  // Always end with a fresh prompt
   print(PROMPT);
   currentInput = "";
 }
